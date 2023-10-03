@@ -15,7 +15,7 @@ function App() {
     <>
       <Routes>
         <Route path={"/"} element={<Home />} />
-        <Route path={"/launchpad"} element={<Launchpad />} />
+        {/* <Route path={"/launchpad"} element={<Launchpad />} /> */}
         <Route path={"/leaderboard"} element={<Leaderboard />} />
       </Routes>
       <ToastContainer position="bottom-right" />

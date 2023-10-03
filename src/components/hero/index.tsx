@@ -7,7 +7,7 @@ const Hero = () => {
           effortlessly
         </h1>
         <p className="text-center text-sm mt-6 max-w-[600px] mx-auto sm:text-xl transition md:max-w-[700px] md:mt-10">
-          Streamline your accounting with Quartex, allowing you to be securely
+          Streamline your accounting with Quartex, allowing you to securely
           share and oversee revenue management.
           <span className="inline-block">
             Utilize Quartex to establish your payment infrastructure.

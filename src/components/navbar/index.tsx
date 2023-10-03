@@ -7,6 +7,10 @@ import Logo from "../../assets/quartexLogo2.png";
 
 //import functions
 import { motion, AnimatePresence } from "framer-motion";
+
+//importing components
+import { toast } from "react-toastify";
+
 //import icons
 import { TiThMenu } from "react-icons/ti";
 import { MdClose } from "react-icons/md";
@@ -26,6 +30,9 @@ const Navbar = () => {
   const [sidebarEnabled, setSidebarEnabled] = useState(false);
   const location = useLocation();
   const pathname = location.pathname;
+  const comingSoon = () => {
+    toast.success("Coming soon");
+  };
   return (
     <nav className="w-[95%] mx-auto max-w-[1300px]">
       <div className="flex justify-between items-center py-4 px-2">
@@ -55,22 +62,28 @@ const Navbar = () => {
             </a>
           </li>
           <li className="inline-block">
-            <a
+            {/* <a
               href="/launchpad"
               className={`hover:underline text-[17px] transition ${
                 pathname === "/launchpad" && "font-semibold"
               }`}
             >
               Launchpad
-            </a>
+            </a> */}
           </li>
         </ul>
-        <a
+        {/* <a
           href="/launchpad"
           className="hidden sm:inline-block bg-gradient-to-r from-green-800 to-green-500 to-green-400 px-8 py-3 rounded-lg text-white text-sm transition font-medium"
         >
           Launchpad
-        </a>
+        </a> */}
+        <button
+          onClick={comingSoon}
+          className="hidden sm:inline-block bg-gradient-to-r from-green-800 to-green-500 to-green-400 px-8 py-3 rounded-lg text-white text-sm transition font-medium"
+        >
+          Launchpad
+        </button>
         {!sidebarEnabled && (
           <div className="sm:hidden">
             <TiThMenu
@@ -112,7 +125,7 @@ const Navbar = () => {
                   <a href="/leaderboard">Leaderboard</a>
                 </li>
                 <li className="text-gray-900 font-light font-sm">
-                  <a href="/launchpad">Launchpad</a>
+                  {/* <a href="/launchpad">Launchpad</a> */}
                 </li>
               </ul>
             </motion.div>

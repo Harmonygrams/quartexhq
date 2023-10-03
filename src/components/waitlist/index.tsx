@@ -46,7 +46,9 @@ const Waitlist = () => {
                 name={"email"}
                 value={email}
                 placeholder={"Enter your email"}
-                className="w-full border-none outline-none px-4 py-3 rounded-lg placeholder:text-sm text-gray-700"
+                className={`w-full border-none outline-none px-4 py-3 rounded-lg placeholder:text-sm text-gray-700 border ${
+                  activeField === "email" && "border-green-500"
+                }`}
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={() => setActiveField("")}
                 onFocus={() => setActiveField("email")}

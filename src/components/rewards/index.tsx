@@ -37,7 +37,7 @@ const Rewards = () => {
               <div className="mt-4">
                 <h3 className="text-xl font-medium">Rewards</h3>
                 <p className="text-sm text-gray-700">
-                  Rewards for time, effort energy, and contributions for early
+                  Rewards for time, effort, energy, and contributions for early
                   supporters
                 </p>
               </div>
@@ -72,7 +72,7 @@ const Rewards = () => {
                     Quartex invite program
                   </h3>
                   <p className="text-sm text-gray-700 transition">
-                    Incentivize users who invites friends to join our program
+                    Incentivize users who invite friends to join our program
                   </p>
                 </div>
               </div>

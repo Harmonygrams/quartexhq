@@ -2,14 +2,14 @@ import axios from "axios";
 const joinWaitlist = (data: object) => {
   const response = axios({
     method: "POST",
-    url: "http://localhost:5001/join-waitlist",
+    url: "https://sv1.quartexhq.xyz/join-waitlist",
     data: data,
   });
   return response;
 };
 const leaderboard = () => {
   const response = axios({
-    url: "http://localhost:5001/fetch-leaderboard",
+    url: "https://sv1.quartexhq.xyz/fetch-leaderboard",
     method: "GET",
   });
   return response;
